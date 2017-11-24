@@ -11,7 +11,7 @@ img {
 }
 
 .clearfix:after {
-    contain: '';
+    content: '';
     clear: both;
     display: block;
 }
@@ -26,6 +26,10 @@ li {
 
 a {
     text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
 }
 
 header {
@@ -45,6 +49,10 @@ header {
 .navigation {
     float: right;
     padding: 49px 0 46px;
+}
+
+.navigation-menu {
+    margin: 0;
 }
 
 .navigation li {
@@ -67,12 +75,148 @@ header {
     border-radius: 25px;
 }
 
-.main-foto {
-    position: relative;
+section {
+    text-align: center;
 }
 
-.main-menu {
+.section-food-menu {
+    position: relative;
+    background: url("../img/main-foto-panakeia.png")no-repeat scroll center/cover;
+    height: 100vh;
+    min-height: 850px;
+}
+
+.food-menu {
     position: absolute;
+    width: 100%;
     bottom: 100px;
+}
+
+.food-list img {
+    max-width: 134px;
+}
+
+h1, .food-menu span {
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    font-family: "Roboto Slab", sans-serif;
+    line-height: 48px;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: 300;
+}
+
+.food-menu span {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.food-list li {
+    width: 33.33%;
+    float: left;
+    padding: 0 40px;
+}
+
+.food-list h2, .food-list p {
+    color: #ffffff;
+    font-family: "Roboto Slab", serif;
+}
+
+.food-list h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.food-list p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.more-food a {
+    color: #612316;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 19px 60px 21px 63px;
+    border-radius: 27px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: #ffffff;
+}
+
+.section-new-menu {
+    background-color: #edeff1;
+    padding-top: 82px;
+}
+
+.section-new-menu h2 {
+    color: #31353e;
+    font-family: "Roboto Slab";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.new-menu li {
+    float: left;
+    width: 33.33%;
+    padding: 84px 14px;
+}
+
+.new-menu h3, .new-menu p {
+    color: #31353e;
+    font-family: Roboto;
+    line-height: 30px;
+}
+
+.new-menu h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.new-menu p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.more-new-menu {
+    margin-top: 39px;
+}
+
+.more-new-menu a {
+    border-radius: 27px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: #ffffff;
+    color: #4e5159;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 21px 52px 22px 56px;
+    display: inline-block;
+}
+
+.newsletter {
+    background: url("../img/newsletter-background.png") no-repeat scroll center/cover;
+}
+
+.newsletter h2 {
+    color: #ffffff;
+    font-family: "Roboto Slab";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.newsletter p {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
 }
 
