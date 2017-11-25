@@ -1,3 +1,7 @@
+body {
+    font-family: "Roboto Slab", sans-serif;
+}
+
 .container {
     max-width: 1200px;
     width: 100%;
@@ -20,16 +24,14 @@ img {
     box-sizing: border-box;
 }
 
-li {
-    list-style-type: none;
-}
-
 a {
     text-decoration: none;
 }
 
-ul {
+.navigation-menu, .food-list, .new-menu, .sign-up, .menu-list-item {
     padding-left: 0;
+    margin: 0;
+    list-style-type: none;
 }
 
 header {
@@ -63,7 +65,6 @@ header {
     display: inline-block;
     padding: 17px 24px;
     color: #31353e;
-    font-family: "Roboto Slab", serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -99,7 +100,6 @@ section {
 h1, .food-menu span {
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
     color: #ffffff;
-    font-family: "Roboto Slab", sans-serif;
     line-height: 48px;
 }
 
@@ -121,7 +121,6 @@ h1 {
 
 .food-list h2, .food-list p {
     color: #ffffff;
-    font-family: "Roboto Slab", serif;
 }
 
 .food-list h2 {
@@ -136,9 +135,12 @@ h1 {
     line-height: 30px;
 }
 
+.more-food {
+    padding-top: 79px;
+}
+
 .more-food a {
     color: #612316;
-    font-family: "Roboto Slab", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
@@ -155,7 +157,6 @@ h1 {
 
 .section-new-menu h2 {
     color: #31353e;
-    font-family: "Roboto Slab";
     font-size: 30px;
     font-weight: 700;
     line-height: 24px;
@@ -169,7 +170,6 @@ h1 {
 
 .new-menu h3, .new-menu p {
     color: #31353e;
-    font-family: Roboto;
     line-height: 30px;
 }
 
@@ -192,7 +192,6 @@ h1 {
     border: 1px solid rgba(255, 255, 255, 0.5);
     background-color: #ffffff;
     color: #4e5159;
-    font-family: Roboto;
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
@@ -201,22 +200,166 @@ h1 {
 }
 
 .newsletter {
-    background: url("../img/newsletter-background.png") no-repeat scroll center/cover;
+    background: url("../img/background-burgers.png") no-repeat scroll center/cover;
+    padding: 100px 0;
 }
 
 .newsletter h2 {
     color: #ffffff;
-    font-family: "Roboto Slab";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-top: 0;
+}
+
+.newsletter p {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+    padding-bottom: 43px;
+    margin: 0;
+}
+
+input[type="email"], input[type="submit"] {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 27px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+form {
+    max-width: 700px;
+    display: inline-block;
+}
+
+input[type="submit"] {
+    color: #612316;
+    margin-left: -101px;
+    min-width: 100px;
+}
+
+input[type="email"] {
+    background-color: transparent;
+    width: 100%;
+    float: left;
+}
+
+input::placeholder {
+    color: #f3f4f6;
+}
+
+.section-sign-up {
+    background-color: #ffffff;
+    padding: 66px 0 88px;
+    height: auto;
+}
+
+.sign-up li {
+    text-align: left;
+}
+
+.sign-up img {
+    border: 1px solid #dbdbdb;
+    width: 50%;
+}
+
+.sign-up li:nth-child(even) img {
+    float: left;
+}
+
+.sign-up li:nth-child(odd) img {
+    float: right;
+}
+
+.red-background, .blue-background {
+    float: left;
+    width: 50%;
+    padding-bottom: 60px;
+}
+
+.red-background {
+    padding-right: 20px;
+}
+
+.blue-background {
+    padding-left: 20px;
+}
+
+.sign-up h2 {
+    color: #191b29;
     font-size: 30px;
     font-weight: 700;
     line-height: 48px;
 }
 
-.newsletter p {
+.sign-up p {
+    color: #191b29;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.sign-up a {
     color: #ffffff;
-    font-family: Roboto;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 19px 71px 17px 78px;
+    border-radius: 27px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-top: 48px;
+    display: inline-block;
+}
+
+.red-background a {
+    background-color: #dd4b2b;
+}
+
+.blue-background a {
+    background-color: #4b4e73;
+}
+
+.menu-list {
+    background-color: #d75d0e;
+    padding: 98px 0 84px;
+    text-align: center;
+}
+
+.menu-list-item {
+    float: left;
+    width: 33.33%;
+}
+
+.menu-list-item a {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+footer {
+    background: url("../img/background-burgers.png") no-repeat scroll center/cover;
+    text-align: center;
+    padding: 85px 0 100px;
+}
+
+footer p {
+    color: #ffffff;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 18px;
     font-weight: 300;
     line-height: 24px;
+    margin: 0;
+}
+
+footer span {
+    font-weight: 700;
 }
 
