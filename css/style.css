@@ -117,10 +117,27 @@ h1 {
     width: 33.33%;
     float: left;
     padding: 0 40px;
+    transition: 0.5s;
+}
+
+.food-list li:hover {
+    background-color: khaki;
+    border: 5px solid darkorange;
+    opacity: 0.7;
+    border-radius: 70px;
+    transition: 0.5s;
 }
 
 .food-list h2, .food-list p {
     color: #ffffff;
+}
+
+.food-list h2:hover, .food-list p:hover {
+    color: darkorange;
+}
+
+.food-list a:hover {
+    color: darkorange;
 }
 
 .food-list h2 {
@@ -148,6 +165,14 @@ h1 {
     border-radius: 27px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     background-color: #ffffff;
+    transition: 0.5s;
+}
+
+.more-food a:hover {
+    background-color: darkorange;
+    opacity: 0.7;
+    transition: 0.5s;
+    color: white;
 }
 
 .section-new-menu {
@@ -197,6 +222,15 @@ h1 {
     line-height: 30px;
     padding: 21px 52px 22px 56px;
     display: inline-block;
+    transition: 0.5s;
+}
+
+.more-new-menu a:hover {
+    background-color: #d75d0e;
+    color: #612316;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: 20px;
 }
 
 .newsletter {
@@ -243,6 +277,14 @@ input[type="submit"] {
     color: #612316;
     margin-left: -101px;
     min-width: 100px;
+}
+
+input[type="email"]:hover {
+    opacity: 0.7;
+}
+
+input[type="submit"]:hover {
+    background-color: #d75d0e;
 }
 
 input[type="email"] {
@@ -326,6 +368,10 @@ input::placeholder {
     background-color: #4b4e73;
 }
 
+.red-background a:hover, .blue-background a:hover {
+    opacity: 0.7;
+}
+
 .menu-list {
     background-color: #d75d0e;
     padding: 98px 0 84px;
@@ -342,6 +388,16 @@ input::placeholder {
     font-size: 18px;
     font-weight: 400;
     line-height: 36px;
+    transition: 0.5s;
+}
+
+.menu-list-item a:hover {
+    transition: 0.5s;
+    color: #d75d0e;
+    border-radius: 27px;
+    border: 3px solid white;
+    background-color: white;
+    padding: 5px;
 }
 
 footer {
@@ -359,7 +415,14 @@ footer p {
     margin: 0;
 }
 
-footer span {
+footer a {
     font-weight: 700;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+footer a:hover {
+    color: #d75d0e;
+    transition: 0.5s;
 }
 
